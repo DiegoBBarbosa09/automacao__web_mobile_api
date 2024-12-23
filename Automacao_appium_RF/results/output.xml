@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on win32)" generated="2024-12-23T12:05:24.534476" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Meus_testes_Automatizados\Automacao_Robot_framework\Automacao_appium_RF\tests">
+<suite id="s1-s1" name="Cadastro Test" source="C:\Meus_testes_Automatizados\Automacao_Robot_framework\Automacao_appium_RF\tests\cadastro_test.robot">
+<test id="s1-s1-t1" name="Teste Case 01.01 - Acessar tela de cadastro" line="9">
+<kw name="Abrir App" owner="app" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://localhost:4723</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Android Emulator</arg>
+<arg>automationName=UIAutomator2</arg>
+<arg>appPackage=com.example.vamsi.login</arg>
+<arg>appActivity=com.example.vamsi.login.MainActivity</arg>
+<arg>uuid=emulator-5554</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-12-23T12:05:24.769728" elapsed="14.001561"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:05:24.769192" elapsed="14.002353"/>
+</kw>
+<kw name="Dado que acesse o app debug a primeira vez" owner="app">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Login</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:38.772350" elapsed="1.024633"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Email</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:39.797281" elapsed="0.143867"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Password</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:39.941322" elapsed="0.163246"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Login</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:40.104732" elapsed="0.048114"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>New User? Register</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:40.153014" elapsed="0.063020"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:05:38.772045" elapsed="1.444108"/>
+</kw>
+<kw name="Quando clicar em New User? Register" owner="app">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-12-23T12:05:40.218124" level="INFO">Clicking element 'id=com.example.vamsi.login:id/tvRegister'.</msg>
+<msg time="2024-12-23T12:05:40.406879" level="INFO">criteria is com.example.vamsi.login:id/tvRegister</msg>
+<arg>id=${button_novo_registro}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:05:40.216820" elapsed="0.190121"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:05:40.216541" elapsed="0.190462"/>
+</kw>
+<kw name="Então usuario é redirecionado a tela de cadastro de usuario" owner="app">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Registration</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:40.407465" elapsed="1.170891"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Name</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:41.578554" elapsed="1.175563"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Phone number</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:42.754261" elapsed="0.026656"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Gmail</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:42.781059" elapsed="0.025449"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Password</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:42.806681" elapsed="0.025743"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Register</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:42.832650" elapsed="0.025362"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Login</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:42.858140" elapsed="0.023888"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:05:40.407272" elapsed="2.474878"/>
+</kw>
+<kw name="Fechar App" owner="app" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2024-12-23T12:05:42.882953" elapsed="0.482630"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:05:42.882624" elapsed="0.483085"/>
+</kw>
+<doc>Acesso a tela de cadastro</doc>
+<status status="PASS" start="2024-12-23T12:05:24.768514" elapsed="18.597413"/>
+</test>
+<test id="s1-s1-t2" name="Teste Case 01.02 - Cadastrar novo usuario" line="15">
+<kw name="Abrir App" owner="app" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://localhost:4723</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Android Emulator</arg>
+<arg>automationName=UIAutomator2</arg>
+<arg>appPackage=com.example.vamsi.login</arg>
+<arg>appActivity=com.example.vamsi.login.MainActivity</arg>
+<arg>uuid=emulator-5554</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-12-23T12:05:43.367439" elapsed="8.840367"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:05:43.367198" elapsed="8.840731"/>
+</kw>
+<kw name="Dado que acesse o app debug a primeira vez" owner="app">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Login</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:52.208472" elapsed="0.948189"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Email</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:53.156824" elapsed="0.030690"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Password</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:53.187663" elapsed="0.034927"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Login</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:53.222823" elapsed="0.038458"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>New User? Register</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:53.261455" elapsed="0.032718"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:05:52.208280" elapsed="1.085979"/>
+</kw>
+<kw name="Quando clicar em New User? Register" owner="app">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-12-23T12:05:53.295538" level="INFO">Clicking element 'id=com.example.vamsi.login:id/tvRegister'.</msg>
+<msg time="2024-12-23T12:05:53.437202" level="INFO">criteria is com.example.vamsi.login:id/tvRegister</msg>
+<arg>id=${button_novo_registro}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:05:53.294756" elapsed="0.142548"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:05:53.294569" elapsed="0.142845"/>
+</kw>
+<kw name="E preencher fomulario com dados validos" owner="cadastro_page">
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-12-23T12:05:53.439124" level="INFO">Typing text 'Rodrigo Almeira' into text field 'id=com.example.vamsi.login:id/etRegName'</msg>
+<msg time="2024-12-23T12:05:55.429913" level="INFO">criteria is com.example.vamsi.login:id/etRegName</msg>
+<arg>id=${Input_nome}</arg>
+<arg>text=${nome}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:05:53.438064" elapsed="1.992017"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-12-23T12:05:55.433517" level="INFO">Typing text '11912341234' into text field 'id=com.example.vamsi.login:id/etRegPhone'</msg>
+<msg time="2024-12-23T12:05:56.492829" level="INFO">criteria is com.example.vamsi.login:id/etRegPhone</msg>
+<arg>id=${input_telefone}</arg>
+<arg>text=${telefone}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:05:55.430449" elapsed="1.062548"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-12-23T12:05:56.495543" level="INFO">Typing text 'rodrigo.almeira@email.com' into text field 'id=com.example.vamsi.login:id/etRegGmail'</msg>
+<msg time="2024-12-23T12:05:57.560036" level="INFO">criteria is com.example.vamsi.login:id/etRegGmail</msg>
+<arg>id=${input_email}</arg>
+<arg>text=${email}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:05:56.493330" elapsed="1.066784"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-12-23T12:05:57.561355" level="INFO">Typing text 'teste1234' into text field 'id=com.example.vamsi.login:id/etRegPassword'</msg>
+<msg time="2024-12-23T12:05:58.622131" level="INFO">criteria is com.example.vamsi.login:id/etRegPassword</msg>
+<arg>id=${input_senha}</arg>
+<arg>text=${senha}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:05:57.560312" elapsed="1.061897"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:05:53.437817" elapsed="5.184455"/>
+</kw>
+<kw name="E Registrar dados do usuario" owner="cadastro_page">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-12-23T12:05:59.162945" level="INFO">criteria is com.example.vamsi.login:id/btnRegLogin</msg>
+<arg>id=${button_registrar}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-12-23T12:05:58.622792" elapsed="0.540221"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-12-23T12:05:59.164098" level="INFO">Clicking element 'id=com.example.vamsi.login:id/btnRegLogin'.</msg>
+<msg time="2024-12-23T12:05:59.253571" level="INFO">criteria is com.example.vamsi.login:id/btnRegLogin</msg>
+<arg>id=${button_registrar}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:05:59.163164" elapsed="0.090489"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:05:58.622595" elapsed="0.631153"/>
+</kw>
+<kw name="Então validar que usuario foi cadastrado com sucesso" owner="cadastro_page">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>text=Registration Successful</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:05:59.254323" elapsed="0.544148"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:05:59.254089" elapsed="0.544573"/>
+</kw>
+<kw name="Fechar App" owner="app" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2024-12-23T12:05:59.800508" elapsed="0.697710"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:05:59.800048" elapsed="0.698313"/>
+</kw>
+<doc>Cadastro de novo usurio no app-debug</doc>
+<tag>Tela_Cadastro</tag>
+<status status="PASS" start="2024-12-23T12:05:43.366767" elapsed="17.132287"/>
+</test>
+<test id="s1-s1-t3" name="Teste Case 01.03 - Enviar cadastro sem preencher campos" line="24">
+<kw name="Abrir App" owner="app" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://localhost:4723</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Android Emulator</arg>
+<arg>automationName=UIAutomator2</arg>
+<arg>appPackage=com.example.vamsi.login</arg>
+<arg>appActivity=com.example.vamsi.login.MainActivity</arg>
+<arg>uuid=emulator-5554</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-12-23T12:06:00.502861" elapsed="8.458688"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:00.502428" elapsed="8.459253"/>
+</kw>
+<kw name="Dado que acesse o app debug a primeira vez" owner="app">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Login</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:06:08.962482" elapsed="0.936116"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Email</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:06:09.898756" elapsed="0.032095"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Password</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:06:09.931008" elapsed="0.026231"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Login</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:06:09.957450" elapsed="0.036230"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>New User? Register</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:06:09.993823" elapsed="0.031510"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:08.962051" elapsed="1.063405"/>
+</kw>
+<kw name="Quando clicar em New User? Register" owner="app">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-12-23T12:06:10.027690" level="INFO">Clicking element 'id=com.example.vamsi.login:id/tvRegister'.</msg>
+<msg time="2024-12-23T12:06:10.174246" level="INFO">criteria is com.example.vamsi.login:id/tvRegister</msg>
+<arg>id=${button_novo_registro}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:06:10.026131" elapsed="0.148204"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:10.025760" elapsed="0.148685"/>
+</kw>
+<kw name="E Registrar dados do usuario" owner="cadastro_page">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-12-23T12:06:11.543020" level="INFO">criteria is com.example.vamsi.login:id/btnRegLogin
+criteria is com.example.vamsi.login:id/btnRegLogin</msg>
+<arg>id=${button_registrar}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-12-23T12:06:10.175411" elapsed="1.367764"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-12-23T12:06:11.545891" level="INFO">Clicking element 'id=com.example.vamsi.login:id/btnRegLogin'.</msg>
+<msg time="2024-12-23T12:06:11.712406" level="INFO">criteria is com.example.vamsi.login:id/btnRegLogin</msg>
+<arg>id=${button_registrar}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:06:11.543538" elapsed="0.168988"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:10.175056" elapsed="1.537608"/>
+</kw>
+<kw name="Então validar mensagem de erro da tela de cadastro" owner="cadastro_page">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>text=Please fill all the detail</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:06:11.713613" elapsed="0.140033"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:11.713190" elapsed="0.140638"/>
+</kw>
+<kw name="Fechar App" owner="app" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2024-12-23T12:06:11.854805" elapsed="0.711362"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:11.854373" elapsed="0.711936"/>
+</kw>
+<doc>Não passar nenhuma informação no cadastro e tentar registrar</doc>
+<tag>Registro_Invalido</tag>
+<status status="PASS" start="2024-12-23T12:06:00.501236" elapsed="12.065251"/>
+</test>
+<status status="PASS" start="2024-12-23T12:05:24.567383" elapsed="47.999990"/>
+</suite>
+<suite id="s1-s2" name="Login Test" source="C:\Meus_testes_Automatizados\Automacao_Robot_framework\Automacao_appium_RF\tests\login_test.robot">
+<test id="s1-s2-t1" name="Caso de Teste 02.01 - Login com sucesso" line="9">
+<kw name="Abrir App" owner="app" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://localhost:4723</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Android Emulator</arg>
+<arg>automationName=UIAutomator2</arg>
+<arg>appPackage=com.example.vamsi.login</arg>
+<arg>appActivity=com.example.vamsi.login.MainActivity</arg>
+<arg>uuid=emulator-5554</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-12-23T12:06:12.580547" elapsed="8.610470"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:12.579562" elapsed="8.611560"/>
+</kw>
+<kw name="Dado que esteja na tela de Login" owner="login_page">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Email</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:06:21.191678" elapsed="0.925733"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Password</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:06:22.117620" elapsed="0.048578"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:21.191459" elapsed="0.974846"/>
+</kw>
+<kw name="Quando passar credenciais validas" owner="login_page">
+<kw name="Registro de novo usuario" owner="login_page">
+<kw name="Quando clicar em New User? Register" owner="app">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-12-23T12:06:22.167940" level="INFO">Clicking element 'id=com.example.vamsi.login:id/tvRegister'.</msg>
+<msg time="2024-12-23T12:06:23.600135" level="INFO">criteria is com.example.vamsi.login:id/tvRegister</msg>
+<arg>id=${button_novo_registro}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:06:22.167036" elapsed="1.433239"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:22.166900" elapsed="1.433526"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Registration</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:06:23.600818" elapsed="0.040711"/>
+</kw>
+<kw name="E preencher fomulario com dados validos" owner="cadastro_page">
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-12-23T12:06:23.643221" level="INFO">Typing text 'Rodrigo Almeira' into text field 'id=com.example.vamsi.login:id/etRegName'</msg>
+<msg time="2024-12-23T12:06:24.235271" level="INFO">criteria is com.example.vamsi.login:id/etRegName</msg>
+<arg>id=${Input_nome}</arg>
+<arg>text=${nome}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:06:23.641904" elapsed="0.593471"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-12-23T12:06:24.237191" level="INFO">Typing text '11912341234' into text field 'id=com.example.vamsi.login:id/etRegPhone'</msg>
+<msg time="2024-12-23T12:06:25.267640" level="INFO">criteria is com.example.vamsi.login:id/etRegPhone</msg>
+<arg>id=${input_telefone}</arg>
+<arg>text=${telefone}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:06:24.235595" elapsed="1.032112"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-12-23T12:06:25.268857" level="INFO">Typing text 'rodrigo.almeira@email.com' into text field 'id=com.example.vamsi.login:id/etRegGmail'</msg>
+<msg time="2024-12-23T12:06:26.297389" level="INFO">criteria is com.example.vamsi.login:id/etRegGmail</msg>
+<arg>id=${input_email}</arg>
+<arg>text=${email}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:06:25.267879" elapsed="1.029589"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-12-23T12:06:26.299316" level="INFO">Typing text 'teste1234' into text field 'id=com.example.vamsi.login:id/etRegPassword'</msg>
+<msg time="2024-12-23T12:06:27.378518" level="INFO">criteria is com.example.vamsi.login:id/etRegPassword</msg>
+<arg>id=${input_senha}</arg>
+<arg>text=${senha}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:06:26.297691" elapsed="1.080961"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:23.641732" elapsed="3.737066"/>
+</kw>
+<kw name="E Registrar dados do usuario" owner="cadastro_page">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-12-23T12:06:27.927977" level="INFO">criteria is com.example.vamsi.login:id/btnRegLogin</msg>
+<arg>id=${button_registrar}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-12-23T12:06:27.379292" elapsed="0.548799"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-12-23T12:06:27.929267" level="INFO">Clicking element 'id=com.example.vamsi.login:id/btnRegLogin'.</msg>
+<msg time="2024-12-23T12:06:28.049046" level="INFO">criteria is com.example.vamsi.login:id/btnRegLogin</msg>
+<arg>id=${button_registrar}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:06:27.928274" elapsed="0.120907"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:27.379017" elapsed="0.670313"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>text=Registration Successful</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:06:28.049573" elapsed="0.102777"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-12-23T12:06:28.153497" level="INFO">Clicking element 'id=com.example.vamsi.login:id/btnGotoLogin'.</msg>
+<msg time="2024-12-23T12:06:28.741530" level="INFO">criteria is com.example.vamsi.login:id/btnGotoLogin</msg>
+<arg>id=${retorna_login}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:06:28.152497" elapsed="0.589155"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:22.166774" elapsed="6.574994"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Email</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:06:28.742066" elapsed="1.320078"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-12-23T12:06:30.063632" level="INFO">Typing text 'rodrigo.almeira@email.com' into text field 'id=com.example.vamsi.login:id/etLogGmail'</msg>
+<msg time="2024-12-23T12:06:30.673951" level="INFO">criteria is com.example.vamsi.login:id/etLogGmail</msg>
+<arg>id=${login_email}</arg>
+<arg>text=${email}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:06:30.062357" elapsed="0.611720"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-12-23T12:06:30.676454" level="INFO">Typing text 'teste1234' into text field 'id=com.example.vamsi.login:id/etLoginPassword'</msg>
+<msg time="2024-12-23T12:06:31.729983" level="INFO">criteria is com.example.vamsi.login:id/etLoginPassword</msg>
+<arg>id=${login_senha}</arg>
+<arg>text=${senha}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:06:30.674348" elapsed="1.055734"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-12-23T12:06:31.732341" level="INFO">Clicking element 'id=com.example.vamsi.login:id/btnLogin'.</msg>
+<msg time="2024-12-23T12:06:32.335484" level="INFO">criteria is com.example.vamsi.login:id/btnLogin</msg>
+<arg>id=${login_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:06:31.730297" elapsed="0.605280"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:22.166587" elapsed="10.169083"/>
+</kw>
+<kw name="Então validar login com sucesso" owner="login_page">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>text=You are now logged in</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:06:32.336168" elapsed="1.297379"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>text=Login sucess</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:06:33.633704" elapsed="0.022922"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:32.335979" elapsed="1.320773"/>
+</kw>
+<doc>Passar credenciais de usuario valido</doc>
+<tag>Dados_Validos</tag>
+<status status="PASS" start="2024-12-23T12:06:12.578515" elapsed="21.078575"/>
+</test>
+<test id="s1-s2-t2" name="Caso de Teste 02.02 - Login com cadastro inexistente" line="16">
+<kw name="Abrir App" owner="app" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://localhost:4723</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Android Emulator</arg>
+<arg>automationName=UIAutomator2</arg>
+<arg>appPackage=com.example.vamsi.login</arg>
+<arg>appActivity=com.example.vamsi.login.MainActivity</arg>
+<arg>uuid=emulator-5554</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-12-23T12:06:33.658458" elapsed="10.177231"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:33.658286" elapsed="10.177505"/>
+</kw>
+<kw name="Dado que esteja na tela de Login" owner="login_page">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Email</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:06:43.836300" elapsed="0.986158"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Password</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:06:44.822675" elapsed="0.037343"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:43.836121" elapsed="1.024039"/>
+</kw>
+<kw name="Quando passar credenciais invlaidas" owner="login_page">
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-12-23T12:06:44.861891" level="INFO">Typing text 'matheus.alves@email.com' into text field 'id=com.example.vamsi.login:id/etLogGmail'</msg>
+<msg time="2024-12-23T12:06:45.494114" level="INFO">criteria is com.example.vamsi.login:id/etLogGmail</msg>
+<arg>id=${login_email}</arg>
+<arg>text=${email_invalido}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:06:44.860753" elapsed="0.633493"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-12-23T12:06:45.496789" level="INFO">Typing text 'teste1234' into text field 'id=com.example.vamsi.login:id/etLoginPassword'</msg>
+<msg time="2024-12-23T12:06:46.575489" level="INFO">criteria is com.example.vamsi.login:id/etLoginPassword</msg>
+<arg>id=${login_senha}</arg>
+<arg>text=${senha}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:06:45.494503" elapsed="1.081092"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-12-23T12:06:46.577260" level="INFO">Clicking element 'id=com.example.vamsi.login:id/btnLogin'.</msg>
+<msg time="2024-12-23T12:06:47.186381" level="INFO">criteria is com.example.vamsi.login:id/btnLogin</msg>
+<arg>id=${login_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-12-23T12:06:46.575813" elapsed="0.610660"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:44.860552" elapsed="2.326016"/>
+</kw>
+<kw name="Então validar erro de login" owner="login_page">
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Login error</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2024-12-23T12:06:47.187156" elapsed="0.591649"/>
+</kw>
+<status status="PASS" start="2024-12-23T12:06:47.186958" elapsed="0.591979"/>
+</kw>
+<doc>Passar credenciais de usuario inexistente</doc>
+<tag>Dados_Invalidos</tag>
+<status status="PASS" start="2024-12-23T12:06:33.657904" elapsed="14.121385"/>
+</test>
+<status status="PASS" start="2024-12-23T12:06:12.568155" elapsed="35.213112"/>
+</suite>
+<status status="PASS" start="2024-12-23T12:05:24.537010" elapsed="83.245736"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Dados_Invalidos</stat>
+<stat pass="1" fail="0" skip="0">Dados_Validos</stat>
+<stat pass="1" fail="0" skip="0">Registro_Invalido</stat>
+<stat pass="1" fail="0" skip="0">Tela_Cadastro</stat>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Cadastro Test">Tests.Cadastro Test</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s2" name="Login Test">Tests.Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

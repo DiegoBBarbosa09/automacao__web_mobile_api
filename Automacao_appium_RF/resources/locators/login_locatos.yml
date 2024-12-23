@@ -1,0 +1,3 @@
+login_email: com.example.vamsi.login:id/etLogGmail
+login_senha: com.example.vamsi.login:id/etLoginPassword
+login_button: com.example.vamsi.login:id/btnLogin

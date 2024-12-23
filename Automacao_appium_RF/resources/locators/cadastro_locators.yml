@@ -1,0 +1,7 @@
+button_novo_registro:  com.example.vamsi.login:id/tvRegister
+input_nome: com.example.vamsi.login:id/etRegName
+input_telefone: com.example.vamsi.login:id/etRegPhone
+input_email:  com.example.vamsi.login:id/etRegGmail
+input_senha:  com.example.vamsi.login:id/etRegPassword
+button_registrar: com.example.vamsi.login:id/btnRegLogin
+retorna_login: com.example.vamsi.login:id/btnGotoLogin

@@ -1,0 +1,18 @@
+{
+  "name": "automacao_appium_rf",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "appium": "^2.13.1",
+    "appium-uiautomator2-driver": "^3.9.5"
+  },
+  "dependencies": {
+    "appium-doctor": "^1.16.2"
+  }
+}
